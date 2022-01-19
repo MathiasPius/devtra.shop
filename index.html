@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DevTrashOps</title>
+    <meta name="description" content="The DevTrashOps Concept">
+    <meta name="author" content="Mathias Pius">
+
+    <meta property="og:title" content="The DevTrashOps Concept.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devtra.shop">
+    <meta property="og:description" content="The DevTrashOps Concept.">
+    <meta property="og:image" content="image.png">
+
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗑️</text></svg>">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <style type="text/css">
+        html,
+        body {
+            width: 100%;
+            margin: 0px;
+            background-color: rgb(33, 33, 33);
+            color: rgb(255, 255, 255);
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body>* {
+            width: 100%;
+            margin: 0px;
+            box-sizing: border-box;
+            padding: 2vw 0vw 2vw 10vw;
+            margin: 2vw 0vw 0vw 0vw;
+        }
+
+        h1 {
+            font-size: 6vw;
+            color: white;
+            background-color: rgb(236, 162, 0);
+        }
+
+        h1>small {
+            font-size: 2vw;
+            color: rgb(33, 33, 33);
+        }
+
+        blockquote {
+            font-style: italic;
+            text-indent: -1.0em;
+            color: rgb(175, 175, 175);
+        }
+
+        blockquote::before {
+            content: "“";
+            position: relative;
+            left: -0.5em;
+        }
+
+        blockquote::after {
+            content: "”";
+        }
+
+        ol>li {
+            line-height: 1.5em;
+            list-style: none;
+            position: relative;
+            font-size: 10pt;
+        }
+
+        div {
+            vertical-align: top;
+            display: inline-block;
+            width: 50vw;
+            max-width: 600px;
+        }
+
+        div>* {
+            margin-top: 0px;
+            margin-bottom: 15px;
+        }
+
+        div>blockquote+blockquote {
+            margin-top: 25px;
+        }
+
+        ol>li:before {
+            counter-increment: definitions;
+            content: "("counter(definitions, lower-alpha) ") ";
+            position: absolute;
+            left: -2.5em;
+        }
+
+        ol {
+            counter-reset: definitions;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ol>li+li {
+            margin-top: 2.0vw;
+        }
+
+        ul>li+li {
+            margin-top: 0.5vw;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Dev·Trash·Ops <small>is..</small></h1>
+    <ol>
+        <li>
+            <div>
+                <p><u>A department</u> tasked with maintaining older or outdated systems which nobody else wants or
+                    cares about anymore, despite these systems serving critical (albeit perhaps unknown) functions
+                    within the parent organization.</p>
+            </div>
+            <div>
+                <blockquote>
+                    Now that Peter is resigning, there will be no developers left on the project to maintain the MongoDB
+                    cluster, so I'll schedule a handover session with Dev<sup>Trash</sup>Ops to ensure continuity.
+                </blockquote>
+            </div>
+        </li>
+        <li>
+            <div>
+                <p><u>The practice</u>, within a department, of continuously adopting business-critical, but
+                    unmaintained systems for the naïve purpose of improvement or replacement despite previous
+                    experiences
+                    indicating a complete absence of organizational interest or willingness to deploy the necessary
+                    level of political or budgetary backing to achieve either.</p>
+            </div>
+            <div>
+                <blockquote>
+                    I really don't think it's wise for us to take ownership of that Jenkins server. We have no idea how
+                    or why it's being used, so we won't be able to improve or replace it. It'll only add to our support
+                    burden and last I checked we didn't practice DevTrashOps here!
+                </blockquote>
+            </div>
+        </li>
+        <li>
+            <div>
+                <p><u>A philosophy</u> effected by well-meaning individuals who believe that solving the
+                    <i>immediate</i> problems of unmaintained systems by taking ownership of these will solve
+                    <i>pathological</i> problems of blindness to tech-debt and their second-order effects within an
+                    organization.
+                </p>
+            </div>
+            <div>
+                <blockquote>
+                    Our CTO has promised me that moving away from our legacy systems is of the highest priority, but he
+                    needs someone to keep this IIS 5.0-server alive. We have a very important launch next
+                    quarter, but after that I'm sure we'll have time to upgrade it!
+                </blockquote>
+            </div>
+        </li>
+        <li>
+            <div>
+                <p><u>The end result</u> of suffering the <i>DevTrashOps</i>-philosophy for extended periods of time,
+                    resulting in...</p>
+                <ul>
+                    <li><b>Constantly shifting priorities</b> to maintain the illusion of <em>velocity</em> or
+                        <em>agility</em> in the face of insurmountable tasks with no organizational backing, and a
+                        disproportionate support burden.
+                    </li>
+
+                    <li><b>Low work satisfaction</b> and frequent intra-departmental existential crises (Why are we even
+                        doing this? What are we trying to achieve?), and ultimately high turnover</li>
+
+                    <li><b>Very high support burden</b> compared to long-term systems renewal or innovation projects.
+                        Zero improvement to downstream users/customers of owned systems.</li>
+
+                    <li><b>Poor or missing documentation</b> with an overweight of tactical documentation (<i>"How to
+                            get system Y to work again in case of X"</i>) vs. strategic (<i>"Roadmap for
+                            decommission/transition of system Z"</i>), assuming any documentation or indeed knowledge
+                        about the owned systems exists at all.</li>
+                </ul>
+            </div>
+            <div>
+                <blockquote>
+                    Our stakeholders are starting to become worried about the increasing frequency and severity of
+                    incidents relating to infrastructure maintained by the Dev<sup>Trash</sup>Ops department. Do you
+                    think it might be related to the three of them that quit last year?
+                </blockquote>
+
+                <blockquote>
+                    We keep hearing about how important decomissioning these old systems is, so why are we not allowed
+                    to set an EOL date for any of them?
+                </blockquote>
+
+                <blockquote>
+                    Welcome to the team! I've granted you access to most of our AWS accounts so you can just click
+                    around in there a bit to familiarize yourself with the services we manage.. Oh yeah we also have a
+                    couple of servers on Linode, and another handful on an old proxmox cluster in the basement, but
+                    those are all on the way out... Any day now!
+                </blockquote>
+            </div>
+        </li>
+    </ol>
+</body>
+
+</html>
